@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import ContactsItem from '../ContactsItem/ContactsItem';
 import { Ul } from './ContactsList.styled';
 import { useSelector } from 'react-redux';

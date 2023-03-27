@@ -6,10 +6,6 @@ const ContactsFilter = () => {
   const dispatch = useDispatch();
   const filterSelector = useSelector(state => state.phonebook.filter);
 
-  // const onFilterContacts = e => {
-  //   dispatch(filterContacts(e.currentTarget.value));
-  // };
-
   return (
     <Styled>
       <Label htmlFor="filter">Find contacts by name</Label>
