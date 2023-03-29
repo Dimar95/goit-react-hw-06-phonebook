@@ -34,6 +34,7 @@ const AddContact = () => {
       return;
     }
     dispatch(addContact({ name, number, id: nanoid() }));
+    reset();
   };
   return (
     <>
@@ -41,7 +42,6 @@ const AddContact = () => {
         onSubmit={e => {
           e.preventDefault();
           onAddContact({ name, number });
-          reset();
         }}
       >
         <Label htmlFor="name">
